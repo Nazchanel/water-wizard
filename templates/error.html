@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Error!</title>
+
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="nav-wrapper">
+      <div class="left-side">
+          <div class="brand">
+              <div>Water: The Most Essential Resource</div>
+          </div>
+      </div>
+      <div class="right-side">
+          <div class="nav-link-wrapper">
+              <a href="/">Home</a>
+          </div>
+          <div class="nav-link-wrapper">
+              <a href="/ourmission">Our Mission</a>
+          </div>
+          <div class="nav-link-wrapper">
+              <a href="/logout">Logout</a>
+          </div>
+      </div>
+  </div>
+    </div>
+
+<h2>ERROR!</h2>
+<p style="font-size: 1.5em;">Cannot sign in with the given name! Signup at this link:</p>
+<p style="font-size: 1.5em;"><a title="Signup" href="/signup">Link</a></p>
+<p>&nbsp;</p>
+
+{% endblock %}

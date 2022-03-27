@@ -1,0 +1,254 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Dashboard</title>
+
+
+{% endblock %}
+
+
+{% block body %}
+
+
+<div class="container">
+  <div class="nav-wrapper">
+      <div class="left-side">
+          <div class="brand">
+              <div>Water: The Most Essential Resource</div>
+          </div>
+      </div>
+      <div class="right-side">
+          <div class="nav-link-wrapper">
+              <a href="/">Home</a>
+          </div>
+          <div class="nav-link-wrapper">
+              <a href="/ourmission">Our Mission</a>
+          </div>
+          <div class="nav-link-wrapper">
+              <a href="/logout">Logout</a>
+          </div>
+      </div>
+  </div>
+    </div>
+<div>Total Gallons = {{ total_gallons }}</div>
+<br>
+<div>Take another survey - </div>
+<hr>
+              </div>
+            </div>
+          </div>
+          <div id="right">
+              <div id="rightContent">
+
+                  <div class="options optionBlocks">
+                    <!--option block-->
+                    <div class="optionBlock">
+                      <div class="option flex">
+                        <p class="bold blue">Baths Taken:</p>
+                        <select class="inputStyles" name="baths">
+                          <option value="0" selected>0</option>
+                          <option value="1">1 baths</option>
+                          <option value="2">2 baths</option>
+                          <option value="3">3 baths</option>
+                          <option value="4">4 baths</option>
+                          <option value="5">5 baths</option>
+                          <option value="6">6 baths</option>
+                          <option value="7">7 baths</option>
+                          <option value="8">8 baths</option>
+                          <option value="9">9 baths</option>
+                          <option value="10">10 baths</option>
+                        </select>
+                      </div>
+                      <div class="option flex">
+                        <p class="bold blue">Teeth Brushings:</p>
+                        <select class="inputStyles" name="teeth">
+                          <option value="0" selected>0</option>
+                          <option value="1">1 brushing</option>
+                          <option value="2">2 brushings</option>
+                          <option value="3">3 brushings</option>
+                          <option value="4">4 brushings</option>
+                          <option value="5">5 brushings</option>
+                          <option value="6">6 brushings</option>
+                          <option value="7">7 brushings</option>
+                          <option value="8">8 brushings</option>
+                          <option value="9">9 brushings</option>
+                          <option value="10">10 brushings</option>
+                          <option value="20">20 brushings</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--option block-->
+                    <div class="optionBlock">
+                      <div class="option flex">
+                        <p class="bold blue">Hand/Face Washings:</p>
+                        <select class="inputStyles" name="hands">
+                          <option value="0" selected>0</option>
+                          <option value="1">1 time</option>
+                          <option value="2">2 times</option>
+                          <option value="3">3 times</option>
+                          <option value="4">4 times</option>
+                          <option value="5">5 times</option>
+                          <option value="6">6 times</option>
+                          <option value="7">7 times</option>
+                          <option value="8">8 times</option>
+                          <option value="9">9 times</option>
+                          <option value="10">10 times</option>
+                          <option value="12">12 times</option>
+                          <option value="14">14 times</option>
+                          <option value="16">16 times</option>
+                          <option value="18">18 times</option>
+                          <option value="20">20 times</option>
+                          <option value="25">25 times</option>
+                        </select>
+                      </div>
+                      <div class="option flex">
+                        <p class="bold blue">Face/Leg shavings:</p>
+                        <select class="inputStyles" name="shaves">
+                          <option value="0">0</option>
+                          <option value="1">1 time</option>
+                          <option value="2">2 times</option>
+                          <option value="3">3 times</option>
+                          <option value="4">4 times</option>
+                          <option value="5">5 times</option>
+                          <option value="6">6 times</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--option block-->
+                    <div class="optionBlock">
+                      <div class="option flex">
+                        <p class="bold blue">Showers:</p>
+                        <select class="inputStyles" name="showers">
+                          <option value="0" selected>0</option>
+                          <option value="1">1 shower</option>
+                          <option value="2">2 showers</option>
+                          <option value="3">3 showers</option>
+                          <option value="4">4 showers</option>
+                          <option value="5">5 showers</option>
+                          <option value="6">6 showers</option>
+                          <option value="7">7 showers</option>
+                          <option value="8">8 showers</option>
+                          <option value="9">9 showers</option>
+                          <option value="10">10 showers</option>
+                        </select>
+                      </div>
+                      <div class="option flex">
+                        <p class="bold blue">Average shower length:</p>
+                        <select class="inputStyles" name="sminutes">
+                          <option value="2">2 minutes</option>
+                          <option value="5">5 minutes</option>
+                          <option value="10" selected>10 minutes</option>
+                          <option value="15">15 minutes</option>
+                          <option value="20">20 minutes</option>
+                          <option value="25">25 minutes</option>
+                          <option value="30">30 minutes</option>
+                          <option value="40">40 minutes</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--option block-->
+                    <div class="optionBlock">
+                      <div class="option flex">
+                        <p class="bold blue">Toilet Flushes:</p>
+                        <select class="inputStyles" name="flushes">
+                          <option value="0" selected>0</option>
+                          <option value="1">1 time</option>
+                          <option value="2">2 times</option>
+                          <option value="3">3 times</option>
+                          <option value="4">4 times</option>
+                          <option value="5">5 times</option>
+                          <option value="6">6 times</option>
+                          <option value="7">7 times</option>
+                          <option value="8">8 times</option>
+                          <option value="9">9 times</option>
+                          <option value="10">10 times</option>
+                          <option value="12">12 times</option>
+                          <option value="14">14 times</option>
+                          <option value="16">16 times</option>
+                          <option value="18">18 times</option>
+                          <option value="20">20 times</option>
+                          <option value="25">25 times</option>
+                        </select>
+                      </div>
+                      <div class="option flex">
+                        <p class="bold blue">Water you drank (8 oz.):</p>
+                        <select class="inputStyles" name="drink">
+                          <option value="0">0</option>
+                          <option value="1">1 glass</option>
+                          <option value="2">2 glasses</option>
+                          <option value="3">3 glasses</option>
+                          <option value="4">4 glasses</option>
+                          <option value="5">5 glasses</option>
+                          <option value="6">6 glasses</option>
+                          <option value="7">7 glasses</option>
+                          <option value="8">8 glasses</option>
+                          <option value="9">9 glasses</option>
+                          <option value="10">10 glasses</option>
+                          <option value="12">12 glasses</option>
+                          <option value="15">15 glasses</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--option block-->
+                    <div class="optionBlock">
+                      <div class="option flex">
+                        <p class="bold blue">Dishwasher Loads:</p>
+                        <select class="inputStyles" name="dishes">
+                          <option value="0" selected>0</option>
+                          <option value="1">1 time</option>
+                          <option value="2">2 times</option>
+                          <option value="3">3 times</option>
+                          <option value="4">4 times</option>
+                          <option value="5">5 times</option>
+                          <option value="6">6 times</option>
+                          <option value="7">7 times</option>
+                          <option value="8">8 times</option>
+                          <option value="9">9 times</option>
+                        </select>
+                      </div>
+                      <div class="option flex">
+                        <p class="bold blue">Dishwashing by Hand:</p>
+                        <select class="inputStyles" name="dishhands">
+                          <option value="0" selected>0</option>
+                          <option value="1">1 time</option>
+                          <option value="2">2 times</option>
+                          <option value="3">3 times</option>
+                          <option value="4">4 times</option>
+                          <option value="5">5 times</option>
+                          <option value="6">6 times</option>
+                          <option value="7">7 times</option>
+                          <option value="8">8 times</option>
+                          <option value="9">9 times</option>
+                          <option value="10">10 times</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--option block-->
+                    <div class="optionBlock">
+                      <div class="option flex">
+                        <p class="bold blue">Clothes Washing Loads:</p>
+                        <select class="inputStyles" name="clothes">
+                          <option value="0">0</option>
+                          <option value="1">1 time</option>
+                          <option value="2">2 times</option>
+                          <option value="3">3 times</option>
+                          <option value="4">4 times</option>
+                          <option value="5">5 times</option>
+                          <option value="6">6 times</option>
+                          <option value="7">7 times</option>
+                          <option value="8">8 times</option>
+                          <option value="9">9 times</option>
+                          <option value="10">10 times</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="submit" class="flex">
+<div class="form-group">
+    <input type="submit" name="submit" class="input-signup" value="Submit">
+</div>
+    </hr>
+
+
+    {% endblock %}
