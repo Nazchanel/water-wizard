@@ -62,7 +62,7 @@ def login():
         name = user_details['name'].lower().strip()
         con = sqlite3.connect(file)
         cur = con.cursor()
-        cur.execute("SELECT name FROM users WHERE name=(?)", (name,))
+        cur.execute("SELECT name FROM users.db WHERE name=(?)", (name,))
         result = cur.fetchone()
         if result:
             print("hi")
